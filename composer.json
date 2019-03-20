@@ -1,0 +1,25 @@
+{
+  "name": "php-fn/app",
+  "description": "psr-15",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/php-fn/php-fn-app",
+  "prefer-stable": true,
+  "require": {
+    "php-fn/di": "^1",
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "docker-xampp/bin": "^1",
+    "php-fn/test": "^1"
+  },
+  "autoload": {
+    "psr-4": {"fn\\": ["src/fn"]},
+    "files": ["src/autoload-files.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {"fn\\": ["tests/fn"]},
+    "files": ["src/autoload-files.php"]
+  }
+}
